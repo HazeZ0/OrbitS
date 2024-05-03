@@ -1,0 +1,1 @@
+Estructura: Cada función tienen que estar en una carpeta distinta
