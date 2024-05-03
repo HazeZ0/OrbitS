@@ -1,0 +1,94 @@
+/*--------Globales--------*/
+/* 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+
+:root{
+    --textos-logos:#9290C3;
+    --fondo:#070F2B;
+    --fuente:"Montserrat", sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;/*1rem=10px*/
+    background-color: var(--fondo);
+    color: var(--textos-logos)
+}
+body{
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 2;/*interlineado 1.5 o 2*/
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.txtJustify{
+    text-align: center;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #0009;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a:nth-child(-n+3) {
+    float: right;
+    display: block;
+    padding: 1.4rem 1.6rem;
+    margin-top: 1.4rem;
+    margin-right: 1.6rem;
+  }
+  
+  .navbar img:nth-child(4){
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    
+  }
+
+  .navbar img:nth-child(-n+3){
+    height: 4rem;
+  }
+
+  .navbar img:nth-child(4){
+    height: 10rem;
+  }
+
+ 
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+  }
