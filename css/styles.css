@@ -14,9 +14,12 @@
 }
 html{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-size: 62.5%;/*1rem=10px*/
     background-color: var(--fondo);
-    color: var(--textos-logos)
+    color: var(--textos-logos);
+    
 }
 body{
     font-family: var(--fuente);
@@ -33,7 +36,7 @@ img{
     display: block;
 }
 
-a{
+a,a:hover{
     text-decoration: none;
     color: #000;
 }
@@ -47,39 +50,54 @@ a{
 .txtJustify{
     text-align: center;
 }
-
-/* Barra de Navegacion */
-.navbar {
-    overflow: hidden;
-    background-color: #0009;
+/*--------header--------*/
+/* Barra de Navegación */
+nav{
+    background: #0005;
+    backdrop-filter: blur(0.3rem);
     position: fixed;
-    top: 0; 
+    overflow: hidden;
+    top: 0;
     width: 100%;
+    backdrop-filter: blur(1);
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
 }
-  
-/* Enlaces del 1 al 3 */
-.navbar a:nth-child(-n+3) {
-    float: right;
+nav a{
+    color: #fff;
+}
+nav a:hover{
+    color: #ef4b3f;
+}
+
+.logo{
+    flex: 1;
+}
+.logo img{
+    width: 10rem;
+    margin-right: 1rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+}
+
+.toggle{
+    font-size: 3rem;
+    display: none;
+}
+
+.menu.active, .toggle{
     display: block;
-    padding: 1.4rem 1.6rem;
-    margin-top: 1.4rem;
-} 
-.navbar img:nth-child(-n+3){
-    height: 4rem;
 }
-/* Efecto */
-.navbar a:hover {
-    background: #ddd;
-    color: black;
+
+main{
+    margin-top: 11rem;
 }
-      
-/*Logo*/
-.navbar img:nth-child(4){
-    float: left;
-    display: block;
-    padding: 14px 16px;
-    
-}
-.navbar img:nth-child(4){
-    height: 10rem;
-}
+/*--------Main--------*/
