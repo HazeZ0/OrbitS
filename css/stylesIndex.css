@@ -1,0 +1,93 @@
+/*Globales Index*/
+html{
+    background-color: var(--fondo);
+    color: var(--textos-logos);
+}
+/*Configurar el color de selección*/
+::-moz-selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+/*--------header--------*/
+/* Barra de Navegación */
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    backdrop-filter: blur(0.2rem);
+}
+nav a{
+    color: var(--textos-logos);
+}
+nav a:hover{
+    color: #fff;
+    transition: 0.1s all ease-in-out;
+}
+
+.logo{
+    flex: 1;
+}
+.logo img{
+    width: 10rem;
+    margin-right: 1rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+}
+
+.toggle{
+    font-size: 3rem;
+    display: none;
+}
+
+.menu.active, .toggle{
+    display: block;
+}
+
+/*--------Main--------*/
+main{
+    margin-top: 11rem;
+}
+.tarjeta{
+    height: 50rem;
+    width: 40rem;
+    padding: 1rem 5rem;
+    background-color: #000;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 1rem;
+}
+.tarjetas{
+    display: grid;
+    width: 150rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1rem;
+}
+.tarjetas :nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.tarjetas:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.tarjetas:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
